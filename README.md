@@ -23,7 +23,11 @@ Modern C++ avoids using heap memory as much as possible by declaring objects on 
 
 void SmartPointerExample(){
         // Declare a smart pointer on stack and pass it the raw pointer.
-        std::unique_ptr<Movie> infinitywar(new Movie("Marvel",2019));
+        std::unique_ptr<Movie> infinitywar{new Movie{"Marvel",2019}};
+        
+                                 or
+       
+        std::unique_ptr<Movie> infinitywar = make_unique<Movie>("Marvel", 2019); // from c++14
 
         // Use infinitywar...
         int total_duration = infinitywar->length;
