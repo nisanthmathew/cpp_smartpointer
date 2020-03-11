@@ -13,34 +13,11 @@ public:
 private slots:
     void initTestCase();
     void cleanupTestCase();
-    void test_case1();
 
 };
 
-smartpointertestcase::smartpointertestcase()
-{
 
-}
 
-smartpointertestcase::~smartpointertestcase()
-{
-
-}
-
-void smartpointertestcase::initTestCase()
-{
-
-}
-
-void smartpointertestcase::cleanupTestCase()
-{
-
-}
-
-void smartpointertestcase::test_case1()
-{
-
-}
 
 QTEST_APPLESS_MAIN(smartpointertestcase)
 

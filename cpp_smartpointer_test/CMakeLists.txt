@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 project(smartpointertestcase LANGUAGES CXX)
 
-
 find_package(Qt5Test REQUIRED)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
